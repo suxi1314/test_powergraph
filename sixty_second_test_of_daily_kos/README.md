@@ -5,9 +5,17 @@ run.sh
 
 ## The outputs are redirected to file:
 ### for each term the number of occurrences of that term that have been assigned to each topic 
-word_counts.1_of_2 
-word_counts.2_of_2
+#### word_counts.1_of_2 
+#### word_counts.2_of_2
+
+#### each file has 51 columns
+#### the first column is words id
+#### other columns means  50 topics
 
 ### for each document the number of tokens assigned to each document.
 doc_counts.1_of_2 
 doc_counts.2_of_2
+
+#### each file has 51 columns
+#### the first column is docs id
+#### other columns means  50 topics
