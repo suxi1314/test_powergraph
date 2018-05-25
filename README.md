@@ -4,7 +4,7 @@ To test topic model toolkit of powergraph
 ## powergraph
 https://github.com/jegonzal/PowerGraph
 
-## Usage and examples of topic model in powergraph
+## Usage and examples of topic model in powergraph, please read this file first!
 topic_model.html
 
 ## Documents of source code for topic model
