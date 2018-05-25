@@ -1,5 +1,8 @@
 # A sixty second test example in topic_modeling.html
 
+## dataset
+daily_kos/
+
 ## command line
 run.sh
 
