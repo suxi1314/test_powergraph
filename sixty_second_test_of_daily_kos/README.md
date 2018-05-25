@@ -15,3 +15,6 @@ Each file has 51 columns. The first column is words id. Other columns means  50 
 #### doc_counts.2_of_2
 
 Each file has 51 columns. The first column is docs id. Other columns means  50 topics
+
+## On terminal system outputs
+result_in_terminal.txt
