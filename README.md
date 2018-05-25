@@ -1,8 +1,11 @@
 # test_powergraph
-test topic model toolkit of powergraph
+To test topic model toolkit of powergraph
 
-# an introduction of topic model in powergraph
+# Usage and examples of topic model in powergraph
 tookit.html
 
+# all documents of topic_model
+doc/
+
 # a sixty seconds example test in tookit.html
-sixty_second_test_of_daily_kos
+sixty_second_test_of_daily_kos/
