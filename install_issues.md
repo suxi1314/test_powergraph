@@ -1,5 +1,7 @@
 按照官方指南https://github.com/jegonzal/PowerGraph 在ubuntu系统中安装遇到两个问题
 # 1. deps/download-*.cmake中的url或md5无效，修改这些文件中的url如下:
+
+## download-libbz2.cmake
 http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
 
 ## download-boost.cmake
