@@ -26,10 +26,10 @@ http://sourceforge.net/projects/opencvlibrary/files/opencv-unix/2.4.9/opencv-2.4
 ## download-eigen.cmake
 http://bitbucket.org/eigen/eigen/get/3.1.2.tar.bz2
 
-# 2. make时报错
-
+# 2. make时
+## 报错
 src/zookeeper.c:2436:5: error: null argument where non-null required (argument 1) [-Werror=nonnull]
      fprintf(LOGSTREAM,"Completion queue: ");
      ^~~~~~~
-改为将log重定向到stderr
+## 改为将log重定向到stderr
      fprintf(stderr,"Completion queue: ");
