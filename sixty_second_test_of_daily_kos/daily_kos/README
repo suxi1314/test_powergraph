@@ -1,0 +1,27 @@
+This bag-of-words dataset has been formatted for the GraphLab topic
+modeling toolkit.  The original data was obtained from:
+
+http://archive.ics.uci.edu/ml/datasets/Bag+of+Words
+
+Please use the following Citation:
+
+@misc{Frank+Asuncion:2010 ,
+ author = "A. Frank and A. Asuncion",
+ year = "2010",
+ title = "{UCI} Machine Learning Repository",
+ url = "http://archive.ics.uci.edu/ml",
+ institution = "University of California, Irvine, School of Information and Computer Sciences" }
+
+
+The formatting requried is minimal (offset to zero index)
+
+   tail -n +4 docword.nytimes.txt | awk '{ print ($1 - 1) "\t" ($2 - 1) "\t" $3}' > doc_word_count.tsv
+
+To speed up parsing we break the doc_word_count.tsv into a collection of files using the split command
+
+   mkdir tokens
+   cd tokens
+   split -l 10000000 -d -a 3 ../doc_word_count.tsv
+   gzip *
+
+You may then want to place the files in HDFS (using hadoop put).
