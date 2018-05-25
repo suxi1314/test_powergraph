@@ -7,5 +7,5 @@ tookit.html
 # all documents of topic_model
 doc/
 
-# a sixty seconds example test in tookit.html
+# Implement of the sixty seconds example
 sixty_second_test_of_daily_kos/
