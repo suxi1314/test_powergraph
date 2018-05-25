@@ -1,0 +1,13 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node10 [label="IS_POD_TYPE",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node10 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="cgs_lda_vertex_program",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcgs__lda__vertex__program.html",tooltip="The collapsed Gibbs sampler vertex program updates the topic counts for the center vertex and then dr..."];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="likelihood_aggregator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlikelihood__aggregator.html",tooltip="The Likelihood aggregators maintains the current estimate of the log-likelihood of the current token ..."];
+  Node8 [label="ivertex_program",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node8 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

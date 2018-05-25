@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="global_counts_aggregator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structglobal__counts__aggregator.html",tooltip="The global counts aggregator computes the total number of tokens in each topic across all words and d..."];
+}
