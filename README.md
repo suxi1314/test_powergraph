@@ -5,12 +5,12 @@ To test topic model toolkit of powergraph
 https://github.com/jegonzal/PowerGraph
 
 ## Usage and examples of topic model in powergraph, please read this file first!
-topic_model.html
+topic_modeling.html
 
 ## Documents of source code for topic model
 doc/
 
-## Implement of the sixty seconds example in topic_model.html
+## Implement of the sixty seconds example
 sixty_second_test_of_daily_kos/
 
 ## Thanks for graphlab.
