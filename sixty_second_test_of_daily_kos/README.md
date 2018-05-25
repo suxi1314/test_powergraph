@@ -8,14 +8,10 @@ run.sh
 #### word_counts.1_of_2 
 #### word_counts.2_of_2
 
-#### each file has 51 columns
-#### the first column is words id
-#### other columns means  50 topics
+Each file has 51 columns. The first column is words id. Other columns means  50 topics
 
 ### for each document the number of tokens assigned to each document.
-doc_counts.1_of_2 
-doc_counts.2_of_2
+#### doc_counts.1_of_2 
+#### doc_counts.2_of_2
 
-#### each file has 51 columns
-#### the first column is docs id
-#### other columns means  50 topics
+Each file has 51 columns. The first column is docs id. Other columns means  50 topics
