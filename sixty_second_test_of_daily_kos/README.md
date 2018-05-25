@@ -3,7 +3,7 @@
 ## command line
 run.sh
 
-## On termination the system outputs:
+## The outputs are redirected to file:
 ### for each term the number of occurrences of that term that have been assigned to each topic 
 word_counts.1_of_2 
 word_counts.2_of_2
