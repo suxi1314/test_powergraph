@@ -1,0 +1,660 @@
+GRAPHLAB_SUBNET_ID/GRAPHLAB_SUBNET_MASK environment variables not defined.
+Using default values
+Subnet ID: 0.0.0.0
+Subnet Mask: 0.0.0.0
+Will find first IPv4 non-loopback address matching the subnet
+INFO:     dc_init_from_mpi.cpp(init_param_from_mpi:51): Will Listen on: 111.195.219.133:57211
+INFO:     dc.cpp(distributed_control:124): Distributed Control Initialized from MPI
+INFO:     dc_tcp_comm.cpp(open_listening:411): Proc 0 listening on 57211
+INFO:     dc_tcp_comm.cpp(connect:432): Trying to connect from 0 -> 0 on port 57211
+INFO:     dc_tcp_comm.cpp(connect:435): Destination IP = 111.195.219.133
+INFO:     dc_tcp_comm.cpp(accept_handler:487): Listening thread launched.
+INFO:     dc_tcp_comm.cpp(accept_handler:493): Accepting....
+INFO:     dc_tcp_comm.cpp(connect:467): connection from 0 to 0 established.
+INFO:     dc_tcp_comm.cpp(accept_handler:498): Accepted
+INFO:     dc_tcp_comm.cpp(new_socket:375): Incoming connection from 111.195.219.133
+INFO:     dc_tcp_comm.cpp(new_socket:384): Proc 0 accepted connection from machine 0
+INFO:     dc_tcp_comm.cpp(accept_handler:548): Listening thread quitting
+INFO:     dc_tcp_comm.cpp(receive_loop:588): Receive loop Started
+INFO:     dc.cpp(init:571): TCP Communication layer constructed.
+INFO:     dc_tcp_comm.cpp(send_loop:647): Send loop Started
+INFO:     dc.cpp(init:573): Cluster of 1 instances created.
+INFO:     metrics_server.cpp(launch_metric_server:219): Metrics server now listening on http://Lenovo-G480:8090
+opening: ./daily_kos/dictionary.txt
+Loooping
+Dictionary Size: 6906
+INFO:     distributed_graph.hpp(set_ingress_method:3214): Automatically determine ingress method: grid
+Loading graph.
+matrix format
+INFO:     distributed_graph.hpp(load_from_posixfs:2199): Loading graph from file: ./daily_kos/tokens/doc_word_count.tsv
+Finalizing graph.
+INFO:     distributed_graph.hpp(finalize:711): Distributed graph: enter finalize
+INFO:     distributed_ingress_base.hpp(finalize:199): Finalizing Graph...
+INFO:     memory_info.cpp(log_usage:90): Memory Info: Post Flush
+	 Heap: 35.6406 MB
+	 Allocated: 32.0579 MB
+INFO:     distributed_ingress_base.hpp(finalize:259): Graph Finalize: constructing local graph
+INFO:     memory_info.cpp(log_usage:90): Memory Info: Finished populating local graph.
+	 Heap: 53.8125 MB
+	 Allocated: 36.9696 MB
+INFO:     distributed_ingress_base.hpp(finalize:304): Graph Finalize: finalizing local graph.
+INFO:     dynamic_local_graph.hpp(finalize:339): Graph finalized in 0.023891 secs
+INFO:     distributed_ingress_base.hpp(finalize:307): Local graph info: 
+	 nverts: 10336
+	 nedges: 353160
+INFO:     memory_info.cpp(log_usage:90): Memory Info: Finished finalizing local graph.
+	 Heap: 69.9844 MB
+	 Allocated: 42.8485 MB
+INFO:     memory_info.cpp(log_usage:90): Memory Info: Finished adding vertex data
+	 Heap: 69.9844 MB
+	 Allocated: 42.7674 MB
+INFO:     memory_info.cpp(log_usage:90): Memory Info: Finihsed allocating lvid2record
+	 Heap: 69.9844 MB
+	 Allocated: 43.244 MB
+INFO:     memory_info.cpp(log_usage:90): Memory Info: Finished synchronizing vertex (meta)data
+	 Heap: 69.9844 MB
+	 Allocated: 48.2009 MB
+INFO:     distributed_ingress_base.hpp(exchange_global_info:521): Graph Finalize: exchange global statistics 
+INFO:     distributed_ingress_base.hpp(exchange_global_info:546): Graph info: 
+	 nverts: 10336
+	 nedges: 353160
+	 nreplicas: 10336
+	 replication factor: 1
+Finalizing graph. Finished in 0.079565 seconds.
+Computing number of words and documents.
+Number of words:     6906
+Number of docs:      3430
+Number of tokens:    467714
+Total tokens: 467714
+INFO:     omni_engine.hpp(omni_engine:194): Using the Asynchronous engine.
+INFO:     distributed_graph.hpp(finalize:711): Distributed graph: enter finalize
+INFO:     distributed_ingress_base.hpp(finalize:199): Finalizing Graph...
+INFO:     distributed_ingress_base.hpp(finalize:244): Skipping Graph Finalization because no changes happened...
+INFO:     distributed_graph.hpp(finalize:711): Distributed graph: enter finalize
+INFO:     distributed_ingress_base.hpp(finalize:199): Finalizing Graph...
+INFO:     distributed_ingress_base.hpp(finalize:244): Skipping Graph Finalization because no changes happened...
+Running The Collapsed Gibbs Sampler
+INFO:     async_consistent_engine.hpp(start:1212): Spawning 10000 threads
+Total Tokens: 0
+Likelihood: 2.61934e-08
+Topic 0: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 1: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 2: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 3: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 4: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 5: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 6: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 7: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 8: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 9: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 10: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 11: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 12: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 13: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 14: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 15: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 16: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 17: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 18: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 19: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 20: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 21: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 22: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 23: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 24: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 25: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 26: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 27: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 28: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 29: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 30: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 31: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 32: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 33: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 34: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 35: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 36: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 37: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 38: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 39: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 40: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 41: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 42: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 43: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 44: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 45: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 46: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 47: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 48: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+Topic 49: zones(0), zone(0), zogbys(0), zogby(0), zimbabwe(0), 
+
+Number of token changes: 0
+
+Number of updates:       0
+INFO:     async_consistent_engine.hpp(start:1238): Total Allocated Bytes: 46712968
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of likelihood. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of likelihood
+Likelihood: -4.23647e+06
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of likelihood at 10
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of global_counts. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of global_counts
+Total Tokens: 467702
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of global_counts at 10
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of global_counts. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of global_counts
+Total Tokens: 467703
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of global_counts at 15
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of likelihood. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of likelihood
+Likelihood: -4.17039e+06
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of likelihood at 15
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of topk. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of topk
+Topic 0: community(258), read(157), bloggers(144), ive(126), piece(120), 
+Topic 1: delay(380), house(340), committee(336), texas(215), republicans(196), 
+Topic 2: service(241), national(201), military(199), kerry(163), guard(156), 
+Topic 3: district(506), house(432), elections(231), race(224), candidates(183), 
+Topic 4: time(698), people(301), long(217), put(160), history(119), 
+Topic 5: administration(796), bush(410), terrorism(292), commission(271), attacks(209), 
+Topic 6: percent(1415), poll(506), numbers(219), lead(208), vote(146), 
+Topic 7: states(954), state(699), gore(226), battleground(179), florida(167), 
+Topic 8: kerry(2201), polls(580), poll(453), results(439), numbers(433), 
+Topic 9: news(1008), president(217), fox(179), heres(97), york(96), 
+Topic 10: research(163), leaders(152), space(145), science(123), conference(120), 
+Topic 11: voters(1043), poll(775), bush(481), polling(284), general(264), 
+Topic 12: election(385), oct(218), county(175), gotv(146), voter(137), 
+Topic 13: jobs(307), tax(237), economy(223), health(217), billion(203), 
+Topic 14: candidates(199), dkos(198), donors(181), lets(146), blog(131), 
+Topic 15: november(907), poll(429), governor(356), polls(332), turnout(315), 
+Topic 16: media(537), tom(230), schaller(197), america(180), reagan(179), 
+Topic 17: iraq(1356), iraqi(512), troops(340), military(325), saddam(304), 
+Topic 18: meteor(442), blades(442), american(151), makes(111), nation(104), 
+Topic 19: general(329), war(201), force(167), official(154), defense(133), 
+Topic 20: court(226), abu(176), law(174), ghraib(145), american(132), 
+Topic 21: white(731), house(518), press(226), report(182), documents(178), 
+Topic 22: bush(4626), bushs(443), george(354), president(333), national(94), 
+Topic 23: candidate(185), ill(145), democratic(144), time(140), night(111), 
+Topic 24: asked(164), war(144), question(139), wrong(125), real(123), 
+Topic 25: republicans(513), conservative(326), bill(306), democrats(271), vote(249), 
+Topic 26: president(857), bushs(514), convention(410), george(179), record(158), 
+Topic 27: john(375), sunday(208), sen(157), clinton(157), sun(153), 
+Topic 28: life(202), family(176), book(148), internet(126), america(122), 
+Topic 29: november(2790), republicans(588), account(584), electoral(522), sunzoo(389), 
+Topic 30: dean(1707), edwards(1124), primary(855), clark(816), iowa(550), 
+Topic 31: democratic(416), win(347), democrats(287), races(217), general(203), 
+Topic 32: senate(1026), race(372), elections(351), knowles(172), primary(163), 
+Topic 33: kerry(1714), bush(631), general(494), john(421), kerrys(265), 
+Topic 34: republican(509), republicans(266), ohio(223), national(173), press(126), 
+Topic 35: south(380), house(220), elections(196), election(184), herseth(180), 
+Topic 36: cheney(497), intelligence(315), president(260), iraq(252), weapons(245), 
+Topic 37: nader(473), ballot(324), party(307), democrats(186), state(176), 
+Topic 38: debate(474), speech(304), thought(196), oct(187), tonight(118), 
+Topic 39: marriage(209), issue(202), gay(199), state(193), amendment(170), 
+Topic 40: party(1045), democratic(821), national(258), dnc(219), democrats(163), 
+Topic 41: policy(350), administration(304), men(191), foreign(171), women(159), 
+Topic 42: time(288), information(177), times(155), article(137), source(113), 
+Topic 43: voting(692), vote(624), governor(483), polls(426), kerry(405), 
+Topic 44: people(810), political(473), politics(224), find(125), idea(115), 
+Topic 45: republican(535), gop(432), democrats(406), race(385), seat(373), 
+Topic 46: campaign(1565), ads(335), media(228), running(145), television(119), 
+Topic 47: war(1234), iraq(529), american(284), killed(243), americans(226), 
+Topic 48: rights(240), act(195), states(189), year(161), issue(160), 
+Topic 49: million(738), money(578), campaign(236), raised(225), fundraising(157), 
+
+Number of token changes: 469820
+
+Number of updates:       200316
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of topk at 20.1
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of likelihood. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of likelihood
+Likelihood: -4.14199e+06
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of likelihood at 20
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of global_counts. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of global_counts
+Total Tokens: 467703
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of global_counts at 20
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of global_counts. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of global_counts
+Total Tokens: 467703
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of global_counts at 25
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of likelihood. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of likelihood
+Likelihood: -4.12556e+06
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of likelihood at 25
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of topk. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of topk
+Topic 0: blog(191), read(186), article(145), bloggers(143), piece(127), 
+Topic 1: delay(400), house(371), committee(319), texas(195), republican(148), 
+Topic 2: service(231), national(222), military(204), bush(166), bushs(165), 
+Topic 3: district(509), house(355), candidates(279), race(273), races(215), 
+Topic 4: time(560), long(179), weve(169), people(133), put(118), 
+Topic 5: administration(822), bush(389), commission(264), terrorism(242), security(209), 
+Topic 6: percent(1401), poll(510), numbers(212), lead(160), september(115), 
+Topic 7: states(1007), state(661), florida(270), gore(215), battleground(176), 
+Topic 8: poll(1203), kerry(1056), polls(711), results(554), numbers(445), 
+Topic 9: news(1098), media(401), report(242), press(190), fox(186), 
+Topic 10: years(150), space(142), research(134), science(117), cell(88), 
+Topic 11: voters(861), bush(435), vote(284), general(243), polling(232), 
+Topic 12: election(493), voters(248), general(230), voter(227), oct(187), 
+Topic 13: tax(342), jobs(308), health(211), billion(209), economy(203), 
+Topic 14: dkos(271), ill(176), time(160), donors(159), community(150), 
+Topic 15: november(1957), poll(397), governor(383), house(377), account(377), 
+Topic 16: media(354), america(196), reagan(182), radio(151), clear(119), 
+Topic 17: iraq(1047), iraqi(484), war(270), forces(252), troops(236), 
+Topic 18: meteor(418), blades(412), makes(150), middle(104), nation(100), 
+Topic 19: general(274), official(170), force(129), city(129), defense(124), 
+Topic 20: court(232), law(210), abu(177), ghraib(148), rumsfeld(119), 
+Topic 21: white(754), house(651), washington(246), press(217), reported(109), 
+Topic 22: bush(4544), president(1164), bushs(819), george(470), rove(96), 
+Topic 23: tom(244), schaller(208), iowa(197), jerome(149), night(144), 
+Topic 24: question(250), wrong(219), asked(217), questions(210), answer(127), 
+Topic 25: republicans(756), republican(371), bill(306), conservative(294), democrats(254), 
+Topic 26: convention(439), speech(249), aug(153), time(140), jul(125), 
+Topic 27: john(308), clinton(191), sunday(175), sun(158), mccain(142), 
+Topic 28: family(213), life(188), book(164), man(139), people(134), 
+Topic 29: november(1771), electoral(357), governor(355), account(348), voting(347), 
+Topic 30: dean(1790), edwards(1119), primary(878), clark(818), democratic(638), 
+Topic 31: win(402), democrats(264), country(227), matter(216), number(161), 
+Topic 32: senate(780), elections(287), race(252), knowles(167), illinois(162), 
+Topic 33: kerry(3034), john(723), bush(623), kerrys(588), general(519), 
+Topic 34: republican(419), republicans(211), ohio(162), yesterday(138), sep(100), 
+Topic 35: south(338), house(322), election(246), elections(223), special(183), 
+Topic 36: cheney(492), iraq(455), intelligence(255), weapons(242), president(242), 
+Topic 37: nader(462), ballot(323), party(214), general(186), candidate(171), 
+Topic 38: debate(504), oct(286), talking(159), fact(131), night(116), 
+Topic 39: issue(285), marriage(212), gay(198), amendment(165), law(164), 
+Topic 40: party(1129), democratic(803), democrats(377), national(226), dnc(186), 
+Topic 41: policy(409), administration(223), foreign(177), nations(166), united(148), 
+Topic 42: information(205), source(151), time(135), office(129), investigation(129), 
+Topic 43: vote(633), kerry(331), bush(314), voting(263), polls(213), 
+Topic 44: people(832), political(556), politics(263), real(160), live(148), 
+Topic 45: senate(398), race(374), gop(367), democrats(352), seat(312), 
+Topic 46: campaign(1385), media(314), ads(313), campaigns(161), television(131), 
+Topic 47: war(1295), iraq(665), americans(229), american(209), killed(197), 
+Topic 48: american(245), government(154), year(152), act(146), important(130), 
+Topic 49: million(732), money(642), campaign(267), raised(248), fundraising(168), 
+
+Number of token changes: 443091
+
+Number of updates:       403587
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of topk at 30.1
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of likelihood. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of likelihood
+Likelihood: -4.12073e+06
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of likelihood at 30
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of global_counts. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of global_counts
+Total Tokens: 467704
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of global_counts at 30
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of global_counts. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of global_counts
+Total Tokens: 467701
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of global_counts at 35
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of likelihood. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of likelihood
+Likelihood: -4.12036e+06
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of likelihood at 35
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of topk. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of topk
+Topic 0: media(280), blog(191), read(172), article(158), bloggers(151), 
+Topic 1: delay(399), house(352), committee(306), texas(209), specter(149), 
+Topic 2: bush(281), national(245), service(217), guard(160), military(144), 
+Topic 3: district(509), house(398), race(300), races(274), republican(190), 
+Topic 4: time(419), long(228), early(150), message(149), weve(122), 
+Topic 5: administration(678), bush(353), commission(261), terrorism(232), security(211), 
+Topic 6: percent(1413), poll(446), voters(201), lead(151), job(136), 
+Topic 7: states(976), state(727), florida(302), gore(228), ohio(213), 
+Topic 8: poll(1243), kerry(790), polls(698), results(542), numbers(505), 
+Topic 9: news(1102), media(396), press(256), fox(182), coverage(163), 
+Topic 10: space(135), research(121), energy(119), years(117), science(117), 
+Topic 11: voters(600), bush(599), polling(262), election(252), vote(223), 
+Topic 12: election(457), voters(290), voter(239), republican(211), general(205), 
+Topic 13: tax(346), jobs(315), economy(216), health(212), billion(204), 
+Topic 14: dkos(264), time(194), donors(163), community(146), jun(139), 
+Topic 15: november(1963), poll(401), house(399), electoral(390), governor(383), 
+Topic 16: reagan(183), air(150), radio(143), america(130), media(128), 
+Topic 17: iraq(897), iraqi(476), american(249), baghdad(236), forces(196), 
+Topic 18: meteor(405), blades(391), makes(120), years(101), middle(91), 
+Topic 19: military(271), general(247), defense(171), official(160), army(145), 
+Topic 20: court(236), law(232), abu(170), ghraib(148), american(113), 
+Topic 21: white(701), house(669), press(164), washington(161), time(140), 
+Topic 22: bush(4347), president(1236), bushs(854), george(485), administration(299), 
+Topic 23: tom(294), schaller(241), democratic(156), iowa(152), people(132), 
+Topic 24: question(308), questions(188), wrong(183), asked(158), people(152), 
+Topic 25: republicans(799), democrats(525), republican(524), bill(308), gop(268), 
+Topic 26: convention(450), speech(294), aug(157), time(138), jul(127), 
+Topic 27: john(336), sunday(194), clinton(189), sun(157), campaign(155), 
+Topic 28: women(200), family(187), life(179), people(138), men(129), 
+Topic 29: november(1684), governor(370), voting(366), account(347), electoral(342), 
+Topic 30: dean(1796), edwards(1122), primary(904), clark(820), democratic(654), 
+Topic 31: win(357), time(286), matter(217), ive(180), close(176), 
+Topic 32: senate(641), elections(312), race(277), knowles(174), illinois(159), 
+Topic 33: kerry(3157), bush(809), john(674), kerrys(579), general(511), 
+Topic 34: republican(200), republicans(187), local(168), yesterday(147), national(116), 
+Topic 35: house(292), south(288), elections(257), election(251), herseth(179), 
+Topic 36: cheney(479), iraq(374), weapons(246), president(226), intelligence(222), 
+Topic 37: nader(452), ballot(331), candidate(208), general(199), presidential(160), 
+Topic 38: debate(507), oct(243), talking(164), thought(123), fact(113), 
+Topic 39: issue(295), marriage(212), union(205), gay(198), unions(179), 
+Topic 40: party(1184), democratic(717), democrats(338), dnc(135), partys(130), 
+Topic 41: policy(382), states(254), united(246), foreign(194), nations(184), 
+Topic 42: source(160), information(138), time(124), investigation(121), office(105), 
+Topic 43: vote(534), kerry(347), bush(249), win(205), voting(197), 
+Topic 44: people(823), political(405), politics(284), fact(160), real(134), 
+Topic 45: senate(523), race(333), democrats(303), gop(292), state(278), 
+Topic 46: campaign(1314), ads(343), media(267), campaigns(231), political(196), 
+Topic 47: war(1525), iraq(929), soldiers(208), troops(193), americans(187), 
+Topic 48: america(272), american(244), americans(162), country(156), act(149), 
+Topic 49: million(719), money(679), campaign(259), raised(246), democratic(191), 
+
+Number of token changes: 440761
+
+Number of updates:       608001
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of topk at 40.1
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of likelihood. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of likelihood
+Likelihood: -4.11774e+06
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of likelihood at 40
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of global_counts. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of global_counts
+Total Tokens: 467705
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of global_counts at 40
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of global_counts. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of global_counts
+Total Tokens: 467703
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of global_counts at 45
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of likelihood. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of likelihood
+Likelihood: -4.11952e+06
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of likelihood at 45
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of topk. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of topk
+Topic 0: media(226), read(204), blog(186), internet(155), bloggers(147), 
+Topic 1: delay(398), house(297), committee(279), texas(195), specter(151), 
+Topic 2: national(233), service(230), guard(156), record(148), vietnam(146), 
+Topic 3: district(496), house(398), race(361), races(241), elections(236), 
+Topic 4: time(368), theyre(189), long(178), past(160), message(160), 
+Topic 5: administration(612), bush(408), commission(259), terrorism(229), security(229), 
+Topic 6: percent(1418), poll(568), voters(209), support(142), job(137), 
+Topic 7: states(954), state(586), florida(278), ohio(206), battleground(183), 
+Topic 8: poll(1268), polls(733), kerry(603), results(555), numbers(521), 
+Topic 9: news(1121), media(430), press(256), fox(180), report(136), 
+Topic 10: space(144), energy(137), years(125), science(117), research(114), 
+Topic 11: voters(568), bush(316), polling(244), election(206), polls(168), 
+Topic 12: election(418), voters(291), republican(218), voter(212), general(192), 
+Topic 13: tax(347), jobs(315), economy(252), billion(211), health(194), 
+Topic 14: dkos(278), time(171), donors(151), dozen(141), ill(138), 
+Topic 15: november(1949), poll(402), account(375), house(368), governor(364), 
+Topic 16: media(215), reagan(186), radio(141), air(132), america(130), 
+Topic 17: iraq(687), iraqi(469), american(239), baghdad(236), iraqis(204), 
+Topic 18: meteor(418), blades(413), makes(128), time(103), friday(96), 
+Topic 19: military(354), general(236), defense(211), rumsfeld(193), pentagon(178), 
+Topic 20: court(229), law(222), abu(169), ghraib(146), supreme(113), 
+Topic 21: white(749), house(735), president(185), time(156), washington(145), 
+Topic 22: bush(4160), president(1010), bushs(836), george(424), administration(380), 
+Topic 23: tom(283), schaller(241), democratic(195), iowa(180), jerome(139), 
+Topic 24: question(280), questions(216), asked(182), youre(155), people(152), 
+Topic 25: republicans(886), democrats(682), republican(639), gop(363), bill(301), 
+Topic 26: convention(448), speech(316), boston(117), country(114), jul(111), 
+Topic 27: john(335), clinton(204), sunday(162), mccain(144), sun(134), 
+Topic 28: women(224), life(188), family(169), people(142), men(136), 
+Topic 29: november(1677), electoral(373), account(348), governor(345), voting(340), 
+Topic 30: dean(1795), edwards(1119), primary(837), clark(819), democratic(596), 
+Topic 31: win(388), time(282), matter(199), ive(190), lets(182), 
+Topic 32: senate(640), race(264), elections(193), knowles(176), senator(165), 
+Topic 33: kerry(3142), bush(1291), john(583), kerrys(581), general(535), 
+Topic 34: yesterday(150), local(123), statement(111), political(107), press(94), 
+Topic 35: south(302), house(300), elections(267), election(231), herseth(179), 
+Topic 36: cheney(488), iraq(432), weapons(248), president(212), intelligence(189), 
+Topic 37: nader(451), ballot(283), general(202), party(173), presidential(145), 
+Topic 38: debate(493), oct(326), talking(149), general(145), spin(101), 
+Topic 39: union(232), issue(220), marriage(211), gay(199), unions(178), 
+Topic 40: party(1091), democratic(596), democrats(376), dnc(143), candidates(142), 
+Topic 41: policy(342), united(315), states(249), nations(211), foreign(197), 
+Topic 42: information(176), investigation(144), office(129), officials(127), source(124), 
+Topic 43: vote(613), bush(382), kerry(291), voting(225), win(197), 
+Topic 44: people(779), political(300), politics(236), time(137), fact(135), 
+Topic 45: senate(493), race(319), democrats(284), seat(256), gop(248), 
+Topic 46: campaign(1285), ads(349), campaigns(233), media(204), political(202), 
+Topic 47: war(1374), iraq(1070), troops(240), soldiers(205), americans(199), 
+Topic 48: america(329), american(286), country(188), americans(155), years(122), 
+Topic 49: million(733), money(659), campaign(255), raised(243), democratic(189), 
+
+Number of token changes: 441306
+
+Number of updates:       805151
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of topk at 50.1
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of likelihood. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of likelihood
+Likelihood: -4.11538e+06
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of likelihood at 50
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of global_counts. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of global_counts
+Total Tokens: 467704
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of global_counts at 50
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of global_counts. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of global_counts
+Total Tokens: 467699
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of global_counts at 55
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of likelihood. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of likelihood
+Likelihood: -4.11679e+06
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of likelihood at 55
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of topk. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of topk
+Topic 0: blog(192), read(190), media(166), bloggers(148), piece(139), 
+Topic 1: delay(396), house(293), committee(293), texas(209), specter(151), 
+Topic 2: national(264), service(213), bush(197), guard(156), draft(141), 
+Topic 3: district(510), house(433), race(310), races(278), elections(215), 
+Topic 4: time(288), long(168), past(152), theyre(142), message(139), 
+Topic 5: administration(617), bush(407), commission(255), terrorism(232), attacks(210), 
+Topic 6: percent(1410), poll(534), voters(263), numbers(196), lead(149), 
+Topic 7: states(940), state(714), florida(201), gore(179), battleground(178), 
+Topic 8: poll(1313), polls(689), kerry(591), results(545), numbers(482), 
+Topic 9: news(1118), media(501), press(306), fox(175), report(174), 
+Topic 10: years(140), energy(138), space(133), science(118), research(118), 
+Topic 11: voters(490), bush(476), election(277), general(223), polling(217), 
+Topic 12: election(461), voters(279), vote(240), voter(232), republican(199), 
+Topic 13: tax(345), jobs(315), economy(229), billion(216), health(212), 
+Topic 14: dkos(276), candidates(201), dozen(160), donors(159), ill(118), 
+Topic 15: november(1956), poll(413), electoral(371), account(362), governor(358), 
+Topic 16: media(205), reagan(188), america(181), radio(152), air(129), 
+Topic 17: iraq(596), iraqi(453), baghdad(232), american(214), iraqis(198), 
+Topic 18: meteor(429), blades(416), time(241), makes(148), friday(120), 
+Topic 19: defense(304), military(296), general(235), rumsfeld(192), pentagon(176), 
+Topic 20: law(272), court(249), abu(179), ghraib(146), supreme(116), 
+Topic 21: white(737), house(733), president(365), time(197), washington(159), 
+Topic 22: bush(3870), president(998), bushs(713), george(451), administration(397), 
+Topic 23: tom(299), schaller(243), democratic(180), iowa(166), people(144), 
+Topic 24: question(281), questions(206), people(183), isnt(155), asked(147), 
+Topic 25: republicans(883), democrats(715), republican(647), gop(335), bill(302), 
+Topic 26: convention(449), speech(313), time(151), night(143), events(118), 
+Topic 27: john(365), clinton(188), sunday(172), sun(142), national(129), 
+Topic 28: women(232), family(188), men(135), life(127), people(109), 
+Topic 29: november(1758), voting(386), electoral(363), governor(360), account(352), 
+Topic 30: dean(1794), edwards(1113), primary(852), clark(818), democratic(618), 
+Topic 31: win(330), matter(190), wont(158), start(147), victory(140), 
+Topic 32: senate(666), elections(235), race(215), knowles(170), illinois(167), 
+Topic 33: kerry(3076), bush(1321), john(588), kerrys(574), general(484), 
+Topic 34: yesterday(157), front(101), statement(95), ryan(94), local(93), 
+Topic 35: house(288), elections(286), election(270), south(228), herseth(179), 
+Topic 36: cheney(474), iraq(430), weapons(244), president(215), war(205), 
+Topic 37: nader(456), ballot(302), campaign(203), presidential(187), general(173), 
+Topic 38: debate(499), oct(342), general(173), talking(134), fact(116), 
+Topic 39: union(233), marriage(207), gay(197), unions(178), issue(174), 
+Topic 40: party(1064), democratic(611), democrats(303), national(163), political(158), 
+Topic 41: states(299), policy(298), united(274), foreign(194), nations(192), 
+Topic 42: information(197), investigation(137), office(123), officials(119), documents(108), 
+Topic 43: vote(574), kerry(366), bush(354), stay(212), win(201), 
+Topic 44: people(984), political(219), time(192), politics(191), fact(142), 
+Topic 45: senate(444), race(355), democrats(322), republican(230), carson(221), 
+Topic 46: campaign(1306), ads(324), political(245), campaigns(229), media(228), 
+Topic 47: war(1422), iraq(1148), troops(256), military(197), soldiers(188), 
+Topic 48: america(308), american(282), country(214), americans(177), years(169), 
+Topic 49: million(730), money(598), campaign(285), raised(241), democratic(158), 
+
+Number of token changes: 440129
+
+Number of updates:       1007568
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of topk at 60.1
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of likelihood. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of likelihood
+Likelihood: -4.11392e+06
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of likelihood at 60
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of global_counts. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of global_counts
+Total Tokens: 467703
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of global_counts at 60
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of global_counts. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of global_counts
+Total Tokens: 467704
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of global_counts at 65
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of likelihood. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of likelihood
+Likelihood: -4.11301e+06
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of likelihood at 65
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:787): Distributed Aggregation of topk. 0 remaining.
+INFO:     distributed_aggregator.hpp(decrement_distributed_counter:793): Aggregate completion of topk
+Topic 0: read(179), blog(179), media(177), book(177), bloggers(147), 
+Topic 1: delay(395), committee(323), house(276), texas(209), specter(151), 
+Topic 2: national(227), service(223), bush(197), guard(163), military(157), 
+Topic 3: district(508), house(408), race(370), races(299), elections(217), 
+Topic 4: time(434), long(198), message(172), past(158), weve(142), 
+Topic 5: administration(600), bush(340), commission(265), terrorism(262), security(226), 
+Topic 6: percent(1417), poll(569), voters(261), numbers(208), support(135), 
+Topic 7: states(864), state(729), florida(299), gore(222), ohio(197), 
+Topic 8: poll(1349), polls(642), results(558), kerry(547), numbers(443), 
+Topic 9: news(1012), media(494), press(292), fox(177), coverage(164), 
+Topic 10: years(172), space(141), energy(118), science(117), research(117), 
+Topic 11: bush(474), voters(458), election(270), general(220), vote(198), 
+Topic 12: election(455), voters(347), vote(288), voter(228), general(221), 
+Topic 13: tax(347), jobs(318), economy(246), health(217), billion(213), 
+Topic 14: dkos(276), candidates(194), time(189), donors(149), dozen(146), 
+Topic 15: november(1947), poll(389), governor(386), house(369), electoral(365), 
+Topic 16: america(172), reagan(171), media(148), radio(146), air(143), 
+Topic 17: iraq(625), iraqi(450), baghdad(230), forces(203), iraqis(191), 
+Topic 18: blades(402), meteor(398), time(234), makes(100), nation(82), 
+Topic 19: military(345), defense(231), general(209), pentagon(182), rumsfeld(175), 
+Topic 20: law(257), court(244), abu(172), ghraib(144), rights(124), 
+Topic 21: house(762), white(719), president(267), time(160), washington(154), 
+Topic 22: bush(3886), president(1110), bushs(808), george(484), administration(469), 
+Topic 23: tom(279), schaller(243), iowa(171), ill(132), democratic(116), 
+Topic 24: question(278), people(222), questions(198), asked(196), youre(147), 
+Topic 25: republicans(937), republican(797), democrats(677), gop(371), democratic(274), 
+Topic 26: convention(444), speech(314), boston(112), nice(111), night(110), 
+Topic 27: john(268), clinton(241), sunday(190), national(138), sun(130), 
+Topic 28: women(240), family(158), life(141), people(140), men(123), 
+Topic 29: november(1808), governor(377), account(367), voting(366), electoral(355), 
+Topic 30: dean(1795), edwards(1117), primary(849), clark(819), democratic(584), 
+Topic 31: win(392), time(173), hard(162), wont(146), ive(136), 
+Topic 32: senate(613), elections(270), race(178), knowles(172), state(158), 
+Topic 33: kerry(3093), bush(1352), john(678), kerrys(587), general(540), 
+Topic 34: yesterday(172), call(124), release(115), statement(113), front(113), 
+Topic 35: house(264), elections(225), south(218), election(196), herseth(179), 
+Topic 36: cheney(491), iraq(392), weapons(237), saddam(213), president(205), 
+Topic 37: nader(461), ballot(289), party(243), presidential(213), candidate(192), 
+Topic 38: debate(502), oct(345), general(132), truth(104), won(103), 
+Topic 39: union(224), marriage(208), issue(195), gay(191), unions(180), 
+Topic 40: party(1052), democratic(610), democrats(333), dnc(157), national(140), 
+Topic 41: united(368), policy(317), states(314), foreign(192), nations(175), 
+Topic 42: officials(163), office(158), information(149), investigation(139), administration(119), 
+Topic 43: vote(585), bush(376), kerry(360), general(232), win(214), 
+Topic 44: people(952), political(312), politics(197), time(193), fact(169), 
+Topic 45: senate(461), race(319), democrats(300), state(250), carson(221), 
+Topic 46: campaign(1353), ads(345), media(269), campaigns(223), political(212), 
+Topic 47: war(1439), iraq(1164), troops(261), soldiers(177), americans(158), 
+Topic 48: america(327), country(298), american(293), americans(217), years(174), 
+Topic 49: million(746), money(682), campaign(296), raised(232), candidates(169), 
+
+Number of token changes: 437340
+
+Number of updates:       1203828
+INFO:     distributed_aggregator.hpp(decrement_finalize_counter:840): 0Reschedule of topk at 70.1
+INFO:     async_consistent_engine.hpp(try_to_quit:834): Endgame mode
+INFO:     fiber_async_consensus.cpp(end_done_critical_section:105): 0: Termination Possible
+INFO:     fiber_async_consensus.cpp(pass_the_token:211): Completed Token: 0 0
+Completed Tasks: 1213947
+Schedule Joins: 82066446
+Schedule Adds: 83280393
+INFO:     async_consistent_engine.hpp(start:1212): Spawning 10000 threads
+Total Tokens: 467714
+Likelihood: -4.11318e+06
+Topic 0: read(179), blog(179), media(177), book(177), bloggers(147), 
+Topic 1: delay(395), committee(323), house(276), texas(209), specter(151), 
+Topic 2: national(227), service(223), bush(197), guard(163), military(157), 
+Topic 3: district(508), house(408), race(370), races(299), elections(217), 
+Topic 4: time(434), long(198), message(172), past(158), weve(142), 
+Topic 5: administration(600), bush(340), commission(265), terrorism(262), security(226), 
+Topic 6: percent(1417), poll(569), voters(261), numbers(208), support(135), 
+Topic 7: states(864), state(729), florida(299), gore(222), ohio(197), 
+Topic 8: poll(1349), polls(642), results(558), kerry(547), numbers(443), 
+Topic 9: news(1012), media(494), press(293), fox(177), coverage(164), 
+Topic 10: years(172), space(141), energy(118), science(117), research(117), 
+Topic 11: bush(475), voters(458), election(270), general(219), vote(198), 
+Topic 12: election(455), voters(347), vote(288), voter(228), general(221), 
+Topic 13: tax(347), jobs(318), economy(246), health(217), billion(213), 
+Topic 14: dkos(276), candidates(194), time(189), donors(149), dozen(146), 
+Topic 15: november(1947), poll(389), governor(386), house(369), electoral(365), 
+Topic 16: america(172), reagan(171), media(148), radio(146), air(143), 
+Topic 17: iraq(626), iraqi(450), baghdad(230), forces(203), iraqis(191), 
+Topic 18: blades(402), meteor(398), time(234), makes(100), nation(82), 
+Topic 19: military(345), defense(231), general(209), pentagon(182), rumsfeld(175), 
+Topic 20: law(257), court(244), abu(172), ghraib(144), rights(124), 
+Topic 21: house(762), white(719), president(267), time(160), washington(154), 
+Topic 22: bush(3885), president(1110), bushs(808), george(484), administration(469), 
+Topic 23: tom(279), schaller(243), iowa(171), ill(132), democratic(116), 
+Topic 24: question(278), people(222), questions(198), asked(196), youre(147), 
+Topic 25: republicans(937), republican(797), democrats(676), gop(371), democratic(274), 
+Topic 26: convention(444), speech(314), boston(112), nice(111), night(110), 
+Topic 27: john(268), clinton(241), sunday(190), national(138), sun(130), 
+Topic 28: women(240), family(158), life(141), people(140), men(123), 
+Topic 29: november(1808), governor(377), account(367), voting(366), electoral(355), 
+Topic 30: dean(1795), edwards(1117), primary(849), clark(819), democratic(584), 
+Topic 31: win(392), time(173), hard(162), wont(146), ive(136), 
+Topic 32: senate(613), elections(270), race(178), knowles(172), state(158), 
+Topic 33: kerry(3094), bush(1352), john(678), kerrys(587), general(540), 
+Topic 34: yesterday(172), call(124), release(115), statement(113), front(113), 
+Topic 35: house(264), elections(225), south(218), election(196), herseth(179), 
+Topic 36: cheney(491), iraq(392), weapons(237), saddam(213), president(205), 
+Topic 37: nader(461), ballot(289), party(243), presidential(213), candidate(192), 
+Topic 38: debate(502), oct(345), general(132), truth(104), won(103), 
+Topic 39: union(224), marriage(208), issue(195), gay(191), unions(180), 
+Topic 40: party(1052), democratic(610), democrats(333), dnc(157), national(140), 
+Topic 41: united(368), policy(317), states(314), foreign(192), nations(175), 
+Topic 42: officials(163), office(158), information(149), investigation(139), administration(119), 
+Topic 43: vote(585), bush(376), kerry(359), general(232), win(214), 
+Topic 44: people(952), political(312), politics(197), time(193), fact(169), 
+Topic 45: senate(461), race(319), democrats(301), state(250), carson(221), 
+Topic 46: campaign(1353), ads(345), media(269), campaigns(223), political(212), 
+Topic 47: war(1438), iraq(1163), troops(261), soldiers(177), americans(158), 
+Topic 48: america(327), country(298), american(293), americans(217), years(174), 
+Topic 49: million(746), money(682), campaign(296), raised(232), candidates(169), 
+
+Number of token changes: 438069
+
+Number of updates:       1213947
+INFO:     async_consistent_engine.hpp(start:1238): Total Allocated Bytes: 46816240
+INFO:     async_consistent_engine.hpp(try_to_quit:834): Endgame mode
+INFO:     fiber_async_consensus.cpp(end_done_critical_section:105): 0: Termination Possible
+INFO:     fiber_async_consensus.cpp(pass_the_token:211): Completed Token: 0 0
+Completed Tasks: 10336
+Schedule Joins: 82066446
+Schedule Adds: 83290729
+----------------------------------------------------------
+Final Runtime (seconds):   60.6141
+Updates executed: 10336
+Update Rate (updates/second): 170.521
+INFO:     distributed_graph.hpp(finalize:711): Distributed graph: enter finalize
+INFO:     distributed_ingress_base.hpp(finalize:199): Finalizing Graph...
+INFO:     distributed_ingress_base.hpp(finalize:244): Skipping Graph Finalization because no changes happened...
+INFO:     distributed_graph.hpp(save_to_posixfs:1865): Saving to file: word_counts.1_of_2
+INFO:     distributed_graph.hpp(save_to_posixfs:1865): Saving to file: word_counts.2_of_2
+INFO:     distributed_graph.hpp(finalize:711): Distributed graph: enter finalize
+INFO:     distributed_ingress_base.hpp(finalize:199): Finalizing Graph...
+INFO:     distributed_ingress_base.hpp(finalize:244): Skipping Graph Finalization because no changes happened...
+INFO:     distributed_graph.hpp(save_to_posixfs:1865): Saving to file: doc_counts.1_of_2
+INFO:     distributed_graph.hpp(save_to_posixfs:1865): Saving to file: doc_counts.2_of_2
+INFO:     metrics_server.cpp(stop_metric_server_on_eof:235): Hit Ctrl-D to stop the metrics server
+^C
+caiji@Lenovo-G480:/opt/graphlab/release/toolkits/topic_modeling$ 
+
