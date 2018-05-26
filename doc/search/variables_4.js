@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['global_5ftopic_5fcount',['GLOBAL_TOPIC_COUNT',['../cgs__lda_8cpp.html#a068eb66e04ec463ba844fb0ab6d3f433',1,'cgs_lda.cpp']]]
+  ['graph_5fargs',['graph_args',['../classgraphlab_1_1graphlab__options.html#ac8eb23a113c99a787dcde631897a687b',1,'graphlab::graphlab_options']]]
 ];

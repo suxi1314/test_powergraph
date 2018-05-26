@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['topic_20modeling',['Topic Modeling',['../topic_modeling.html',1,'']]]
+  ['1_3a_20creating_20a_20graphlab_20project',['1: Creating a GraphLab project',['../using_graphlab_create_project.html',1,'using_graphlab']]]
 ];

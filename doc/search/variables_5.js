@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['interval',['INTERVAL',['../cgs__lda_8cpp.html#add85e159418687ce46ff60b126cdeeac',1,'cgs_lda.cpp']]]
+  ['heap',['heap',['../classgraphlab_1_1mutable__queue.html#a9ded6959ce632606f1bdc8880ea2fc73',1,'graphlab::mutable_queue']]]
 ];

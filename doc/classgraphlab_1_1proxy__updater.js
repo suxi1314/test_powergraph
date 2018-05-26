@@ -1,0 +1,27 @@
+var classgraphlab_1_1proxy__updater =
+[
+    [ "context", "classgraphlab_1_1proxy__updater.html#a7a80576124eb25b1c9113429fc05778e", null ],
+    [ "core", "classgraphlab_1_1proxy__updater.html#a73450214929a5eeb39cda60ae81ae7ca", null ],
+    [ "proxy_updater", "classgraphlab_1_1proxy__updater.html#a29deb1d435b604551c06a2b43300db21", null ],
+    [ "proxy_updater", "classgraphlab_1_1proxy__updater.html#ac3ffe4aabbfdf1f5a8916925cc2ad5c7", null ],
+    [ "proxy_updater", "classgraphlab_1_1proxy__updater.html#aa7916a1affb3b6c02a299a17c40052ae", null ],
+    [ "~proxy_updater", "classgraphlab_1_1proxy__updater.html#abf4f787f0ec0b5a20363006c231647fd", null ],
+    [ "apply", "classgraphlab_1_1proxy__updater.html#a433f5564455b6bdc12f05e6c67297fa2", null ],
+    [ "consistency", "classgraphlab_1_1proxy__updater.html#a5e3b82ef7a82e3e6b966137d3300cdb5", null ],
+    [ "gather", "classgraphlab_1_1proxy__updater.html#a992b068d3f7713af949f5e34b3689cbd", null ],
+    [ "gather_consistency", "classgraphlab_1_1proxy__updater.html#a83f73ed26b559c20cc6a8754538eb19a", null ],
+    [ "gather_edges", "classgraphlab_1_1proxy__updater.html#a2efab4e006528c93993b9f663e1e20f3", null ],
+    [ "handle_exception", "classgraphlab_1_1proxy__updater.html#a0ee9fb08d058efca726c0b0eab808f44", null ],
+    [ "init_gather", "classgraphlab_1_1proxy__updater.html#adc2a3ff343cea0d117c13bf97b0fe5dd", null ],
+    [ "is_factorizable", "classgraphlab_1_1proxy__updater.html#a13d766c71bea1fcfd88697c4ffd92cb9", null ],
+    [ "merge", "classgraphlab_1_1proxy__updater.html#a94a955e11d547b1faf16f399d3b34422", null ],
+    [ "obj", "classgraphlab_1_1proxy__updater.html#a8b5cf216898b5dc1c321a3bdd7a82d8d", null ],
+    [ "obj", "classgraphlab_1_1proxy__updater.html#ae0b9c77bd2e9ee6baecb343e7a226407", null ],
+    [ "operator()", "classgraphlab_1_1proxy__updater.html#a479db131ce1e356effc8b5ae6ef951dd", null ],
+    [ "operator+=", "classgraphlab_1_1proxy__updater.html#a582d09717be4645febe8d9907e3ef4e6", null ],
+    [ "operator=", "classgraphlab_1_1proxy__updater.html#a7e77023dacb82ce3c8db37fb8576648a", null ],
+    [ "scatter", "classgraphlab_1_1proxy__updater.html#a351ce5d62cc52490202856419187c988", null ],
+    [ "scatter_consistency", "classgraphlab_1_1proxy__updater.html#a9069693a0c98ec25f6837e6241451575", null ],
+    [ "scatter_edges", "classgraphlab_1_1proxy__updater.html#a5fe3b4cbd2ca54e57d52001deabaf640", null ],
+    [ "set_obj", "classgraphlab_1_1proxy__updater.html#ac71873d1c01e24939d74a8e1066fda77", null ]
+];

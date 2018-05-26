@@ -5,10 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: File Members</title>
+<title>GraphLab: Distributed Graph-Parallel API: File Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,7 +28,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">GraphLab: Distributed Graph-Parallel API
+   &#160;<span id="projectnumber">2.2</span>
    </div>
   </td>
  </tr>
@@ -43,6 +51,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('globals.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -58,168 +80,56 @@ $(function() {
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented file members with links to the documentation:</div>
-
-<h3><a id="index_a"></a>- a -</h3><ul>
-<li>ALPHA
-: <a class="el" href="cgs__lda_8cpp.html#abca75265d47aed1a5aaac8e79f8db623">cgs_lda.cpp</a>
+<div class="textblock">Here is a list of all documented file members with links to the documentation:</div><ul>
+<li>__print_back_trace()
+: <a class="el" href="logger_8hpp.html#a163f225ba17d4c09aee4923647a87bc5">logger.hpp</a>
 </li>
-<li>assignment_type
-: <a class="el" href="cgs__lda_8cpp.html#ab45152c4e5606bd9f54d9c106b4bf8e2">cgs_lda.cpp</a>
+<li>COLOROUTPUT
+: <a class="el" href="logger_8hpp.html#a407629ed2d44412adc1a9fd1bf8fc35b">logger.hpp</a>
 </li>
-</ul>
-
-
-<h3><a id="index_b"></a>- b -</h3><ul>
-<li>BETA
-: <a class="el" href="cgs__lda_8cpp.html#afc84277b28fe008096c4d3dae3c63c21">cgs_lda.cpp</a>
+<li>global_logger()
+: <a class="el" href="logger_8hpp.html#aef60a908dad24e76204c6225acb2fe85">logger.hpp</a>
 </li>
-<li>BURNIN
-: <a class="el" href="cgs__lda_8cpp.html#a18eee62e08240323f37c38415ad095be">cgs_lda.cpp</a>
+<li>LOG_DEBUG
+: <a class="el" href="logger_8hpp.html#a6ff63e8955665c4a58b1598f2b07c51a">logger.hpp</a>
 </li>
-</ul>
-
-
-<h3><a id="index_c"></a>- c -</h3><ul>
-<li>count_tokens()
-: <a class="el" href="cgs__lda_8cpp.html#a46630a5f6fc7e253c19929561c47af0a">cgs_lda.cpp</a>
+<li>LOG_EMPH
+: <a class="el" href="logger_8hpp.html#a635668a0d16d70cc9dd51791310d9065">logger.hpp</a>
 </li>
-</ul>
-
-
-<h3><a id="index_d"></a>- d -</h3><ul>
-<li>DECLARE_EVENT()
-: <a class="el" href="cgs__lda_8cpp.html#a17fbc8c86d0c2b861a860913b649d229">cgs_lda.cpp</a>
+<li>LOG_ERROR
+: <a class="el" href="logger_8hpp.html#aced66975c154ea0e2a8ec3bc818b4e08">logger.hpp</a>
 </li>
-<li>DICTIONARY
-: <a class="el" href="cgs__lda_8cpp.html#abcbd6db47fb779a59303713bea948cc9">cgs_lda.cpp</a>
+<li>LOG_EVERYTHING
+: <a class="el" href="logger_8hpp.html#a8d1c7048b8cb40592b893042a72b38db">logger.hpp</a>
 </li>
-</ul>
-
-
-<h3><a id="index_e"></a>- e -</h3><ul>
-<li>engine_type
-: <a class="el" href="cgs__lda_8cpp.html#a5e712bf0143b71f0f1676078e3351267">cgs_lda.cpp</a>
+<li>LOG_FATAL
+: <a class="el" href="logger_8hpp.html#ac2164369b4d2bf72296f8ba6ea576ecf">logger.hpp</a>
 </li>
-<li>eparser()
-: <a class="el" href="cgs__lda_8cpp.html#a243a9c69d8720dc113aa4739bf6f80b0">cgs_lda.cpp</a>
+<li>LOG_INFO
+: <a class="el" href="logger_8hpp.html#aeb4f36db01bd128c7afeac5889dac311">logger.hpp</a>
 </li>
-</ul>
-
-
-<h3><a id="index_f"></a>- f -</h3><ul>
-<li>factor_type
-: <a class="el" href="cgs__lda_8cpp.html#a01eb12558c1c8d8a770e41a8e900807f">cgs_lda.cpp</a>
+<li>LOG_NONE
+: <a class="el" href="logger_8hpp.html#a1632479322efa3952798f98177b54471">logger.hpp</a>
 </li>
-</ul>
-
-
-<h3><a id="index_g"></a>- g -</h3><ul>
-<li>get_other_vertex()
-: <a class="el" href="cgs__lda_8cpp.html#a6bea130f2e725ad12b59c247643f87bd">cgs_lda.cpp</a>
+<li>LOG_WARNING
+: <a class="el" href="logger_8hpp.html#adf4476a6a4ea6c74231c826e899d7189">logger.hpp</a>
 </li>
-<li>GLOBAL_TOPIC_COUNT
-: <a class="el" href="cgs__lda_8cpp.html#a068eb66e04ec463ba844fb0ab6d3f433">cgs_lda.cpp</a>
+<li>logger
+: <a class="el" href="logger_8hpp.html#ab58cdd006f6b33cbe171ab32effef95b">logger.hpp</a>
 </li>
-<li>graph_loader()
-: <a class="el" href="cgs__lda_8cpp.html#a77d078ceafcca6f031d16259115c7fd2">cgs_lda.cpp</a>
-</li>
-<li>graph_type
-: <a class="el" href="cgs__lda_8cpp.html#ab9cfd2cad1698282b6c7fd7f7e7fd459">cgs_lda.cpp</a>
-</li>
-</ul>
-
-
-<h3><a id="index_i"></a>- i -</h3><ul>
-<li>icontext_type
-: <a class="el" href="cgs__lda_8cpp.html#a016cad045fa678bff0a04d795ef3899c">cgs_lda.cpp</a>
-</li>
-<li>INTERVAL
-: <a class="el" href="cgs__lda_8cpp.html#add85e159418687ce46ff60b126cdeeac">cgs_lda.cpp</a>
-</li>
-<li>is_doc()
-: <a class="el" href="cgs__lda_8cpp.html#a67aa0fa68b36f6fe444849293a5bfc85">cgs_lda.cpp</a>
-</li>
-<li>is_word()
-: <a class="el" href="cgs__lda_8cpp.html#a9bddb35493ae7ebf448415f1d87033cd">cgs_lda.cpp</a>
-</li>
-</ul>
-
-
-<h3><a id="index_l"></a>- l -</h3><ul>
-<li>LIK_INTERVAL
-: <a class="el" href="cgs__lda_8cpp.html#af758de5066e69a97f357a88d5bb11df4">cgs_lda.cpp</a>
-</li>
-<li>load_and_initialize_graph()
-: <a class="el" href="cgs__lda_8cpp.html#a15539d26c98141af3ba93717cb4a8b0f">cgs_lda.cpp</a>
-</li>
-<li>load_dictionary()
-: <a class="el" href="cgs__lda_8cpp.html#a8052648dda24f72fb007c708fa37484c">cgs_lda.cpp</a>
-</li>
-</ul>
-
-
-<h3><a id="index_m"></a>- m -</h3><ul>
-<li>main()
-: <a class="el" href="cgs__lda_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">cgs_lda.cpp</a>
-</li>
-<li>MAX_COUNT
-: <a class="el" href="cgs__lda_8cpp.html#ad9cbfe3ad0ca5846636ae21bfeea8683">cgs_lda.cpp</a>
-</li>
-</ul>
-
-
-<h3><a id="index_n"></a>- n -</h3><ul>
-<li>NDOCS
-: <a class="el" href="cgs__lda_8cpp.html#a235ea7ba75a620ac6d2a7d823db7beb0">cgs_lda.cpp</a>
-</li>
-<li>NTOKENS
-: <a class="el" href="cgs__lda_8cpp.html#a9cc8009cd88ea76321df76e78c8a8e04">cgs_lda.cpp</a>
-</li>
-<li>NTOPICS
-: <a class="el" href="cgs__lda_8cpp.html#a391de415e9dd8f59cc1706bfcfc3246d">cgs_lda.cpp</a>
-</li>
-<li>NWORDS
-: <a class="el" href="cgs__lda_8cpp.html#a4ec172f5d0a608bc32e20e598a9b6294">cgs_lda.cpp</a>
-</li>
-</ul>
-
-
-<h3><a id="index_o"></a>- o -</h3><ul>
-<li>operator+=()
-: <a class="el" href="cgs__lda_8cpp.html#a028a2c00c268238d3eb378f3b00077a9">cgs_lda.cpp</a>
-</li>
-</ul>
-
-
-<h3><a id="index_t"></a>- t -</h3><ul>
-<li>topic_id_type
-: <a class="el" href="cgs__lda_8cpp.html#a59e02ce4dbef7255967e4afa8d068682">cgs_lda.cpp</a>
-</li>
-<li>TOPK
-: <a class="el" href="cgs__lda_8cpp.html#aea2cc9c2cb517e94277ad2cd3e7f5671">cgs_lda.cpp</a>
-</li>
-</ul>
-
-
-<h3><a id="index_v"></a>- v -</h3><ul>
-<li>vparser()
-: <a class="el" href="cgs__lda_8cpp.html#a615fd42cf5a6dcca18b986c986e59877">cgs_lda.cpp</a>
-</li>
-</ul>
-
-
-<h3><a id="index_w"></a>- w -</h3><ul>
-<li>word_cloud_callback()
-: <a class="el" href="cgs__lda_8cpp.html#aa324395e6a36763936cae7b0a13cf496">cgs_lda.cpp</a>
+<li>OUTPUTLEVEL
+: <a class="el" href="logger_8hpp.html#a3d18ed817dcda9f54a4f353ccf9b1b36">logger.hpp</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

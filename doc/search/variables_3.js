@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['factor',['factor',['../structvertex__data.html#aa1f627ec7a9c546812675742027c6850',1,'vertex_data']]]
+  ['engine_5fargs',['engine_args',['../classgraphlab_1_1graphlab__options.html#a628a0d1160adea8b876741ed19c75b31',1,'graphlab::graphlab_options']]],
+  ['env_5fid',['ENV_ID',['../classgraphlab_1_1jni__core.html#a18956b39349325d54682d60effd27bf5',1,'graphlab::jni_core']]]
 ];
