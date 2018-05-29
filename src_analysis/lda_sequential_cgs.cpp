@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 /*
  * Copyright (c) 2009 Carnegie Mellon University.
+=======
+/*  
+ * Copyright (c) 2009 Carnegie Mellon University. 
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
  *     All rights reserved.
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,6 +22,7 @@
  *
  */
 
+<<<<<<< HEAD
  /**
   * \file lda_sequential_cgs.cpp
   *
@@ -27,6 +33,8 @@
   */
 
 
+=======
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
 
 #include <iostream>
 #include <iomanip>
@@ -53,6 +61,7 @@ typedef uint16_t topic_id_type;
 typedef uint32_t count_type;
 #define NULL_TOPIC topic_id_type(-1)
 
+<<<<<<< HEAD
 /**
  * \brief The token_type is a word_id, doc_id pair
  *
@@ -61,12 +70,19 @@ struct token_type {
   word_id_type word;
   doc_id_type doc;
   token_type(const word_id_type& word = 0, const doc_id_type& doc = 0) :
+=======
+struct token_type {
+  word_id_type word;
+  doc_id_type doc;
+  token_type(const word_id_type& word = 0, const doc_id_type& doc = 0) : 
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
     word(word), doc(doc) { }
 };
 std::ostream& operator<<(std::ostream& out, const token_type& tok) {
   return out << "(" << tok.word << ", " << tok.doc << ")";
 }
 
+<<<<<<< HEAD
 /**
  * \brief The corpus_type is the detail of corpus
  *
@@ -81,6 +97,18 @@ struct corpus_type {
               const std::string& counts_fname ) :
     nwords(0), ndocs(0), ntokens(0) {
     // why reverse?
+=======
+
+struct corpus_type {
+  size_t nwords, ndocs, ntokens;
+  std::vector< token_type > tokens;
+  std::vector<std::string> dictionary;
+  std::vector< word_id_type > ntokens_in_doc;
+  
+  corpus_type(const std::string& dictionary_fname, 
+              const std::string& counts_fname ) : 
+    nwords(0), ndocs(0), ntokens(0) {
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
     dictionary.reserve(20000);
     ntokens_in_doc.reserve(5000);
     tokens.reserve(100000);
@@ -98,7 +126,11 @@ struct corpus_type {
   }
 
   void load_counts(const std::string& fname)  {
+<<<<<<< HEAD
     std::ifstream fin(fname.c_str());
+=======
+    std::ifstream fin(fname.c_str());    
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
     while(fin.good()) {
       // Read a collection of tokens
       const size_t NULL_VALUE(-1);
@@ -171,6 +203,7 @@ public:
     for(size_t i = 0; i < data.size(); ++i) z += data[i];
     return z;
   }
+<<<<<<< HEAD
 }; // end of matrix
 typedef matrix<count_type> mat_type;
 
@@ -178,13 +211,22 @@ typedef matrix<count_type> mat_type;
  * \brief The Collapsed gibbs sampler
  *
  */
+=======
+}; // end of matrix 
+typedef matrix<count_type> mat_type;
+
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
 
 class collapsed_gibbs {
 public:
   const corpus_type* corpus_ptr;
   const size_t ntopics;
   const double alpha, beta;
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
   std::vector< topic_id_type > topics;
   //! n_td(t,d) Number of occurences of topic t in document d
   mat_type n_td;
@@ -195,18 +237,30 @@ public:
   //! number of times a token was assigned to a new topic
   size_t nchanges;
 
+<<<<<<< HEAD
   collapsed_gibbs(const corpus_type& corpus,
                   const size_t& ntopics,
                   const double& alpha,
                   const double& beta) :
+=======
+  collapsed_gibbs(const corpus_type& corpus, 
+                  const size_t& ntopics,
+                  const double& alpha,
+                  const double& beta) : 
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
     corpus_ptr(&corpus), ntopics(ntopics), alpha(alpha),
     beta(beta), topics(corpus.ntokens, NULL_TOPIC),
     n_td(ntopics, corpus.ndocs, 0),
     n_wt(corpus.nwords, ntopics, 0),
     n_t(ntopics, 1, 0),
     nchanges(0) { }
+<<<<<<< HEAD
 
 
+=======
+  
+  
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
   void iterate() {
     assert(corpus_ptr != NULL);
     const corpus_type& corpus = *corpus_ptr;
@@ -230,7 +284,11 @@ public:
       double normalizer = 0;
       for(size_t t = 0; t < ntopics; ++t) {
         conditional[t] = (alpha + n_td(t,d)) * (beta + n_wt(w,t)) /
+<<<<<<< HEAD
           (beta * corpus.nwords + n_t(t));
+=======
+          (beta * corpus.nwords + n_t(t)); 
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
         normalizer += conditional[t];
       }
       assert(normalizer > 0);
@@ -265,10 +323,17 @@ double log_likelihood(const double& alpha, const double& beta,
   const size_t nwords = n_wt.rows();
 
   mat_type n_t(ntopics,1, 0);
+<<<<<<< HEAD
   for(size_t t = 0; t < n_wt.cols(); ++t)
     for(size_t w = 0; w < n_wt.rows(); ++w) n_t(t) += n_wt(w,t);
 
 
+=======
+  for(size_t t = 0; t < n_wt.cols(); ++t) 
+    for(size_t w = 0; w < n_wt.rows(); ++w) n_t(t) += n_wt(w,t);
+      
+  
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
   // Matlab Functions:
   //
   //  llik_w_given_z = ...
@@ -279,7 +344,11 @@ double log_likelihood(const double& alpha, const double& beta,
   //    ndocs * (gammaln(ntopics * alpha) - ntopics * gammaln(alpha)) + ...
   //    sum(sum(gammaln(n_td + alpha)) - gammaln(sum(n_td) + ntopics * alpha));
 
+<<<<<<< HEAD
   double llik_words_given_topics =
+=======
+  double llik_words_given_topics = 
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
     ntopics * (lgamma(nwords * beta) - nwords * lgamma(beta));
   for(size_t t = 0; t < ntopics; ++t) {
     for(size_t w = 0; w < nwords; ++w) {
@@ -292,7 +361,11 @@ double log_likelihood(const double& alpha, const double& beta,
     size_t ntokens_in_doc = 0;
     for(size_t t = 0; t < ntopics; ++t) {
       llik_topics += lgamma(n_td(t,d) + alpha);
+<<<<<<< HEAD
       ntokens_in_doc += n_td(t,d);
+=======
+      ntokens_in_doc += n_td(t,d); 
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
     }
     llik_topics -= lgamma(ntokens_in_doc + ntopics * alpha);
   }
@@ -370,10 +443,17 @@ int main(int argc, char** argv) {
      default_value(wordtop_fname), "wordtop_fname")
     ("topk", po::value<size_t>(&topk)->
      default_value(topk), "number of top k to show");
+<<<<<<< HEAD
 
   po::variables_map vm;
   po::store(po::parse_command_line(argc, argv, desc), vm);
   po::notify(vm);
+=======
+  
+  po::variables_map vm;
+  po::store(po::parse_command_line(argc, argv, desc), vm);
+  po::notify(vm);    
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
   if (vm.count("help")) {
     std::cout << desc << "\n";
     return EXIT_FAILURE;
@@ -382,9 +462,15 @@ int main(int argc, char** argv) {
   if (dictionary_fname.length() == 0 || counts_fname.length() == 0) {
     std::cout << "Both counts and dictionary must be specified" << std::endl;
     std::cout << desc << "\n";
+<<<<<<< HEAD
     return EXIT_FAILURE;
   }
 
+=======
+    return EXIT_FAILURE; 
+  }
+  
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
   std::cout << "Loading the corpus." << std::endl;
   corpus_type corpus(dictionary_fname, counts_fname);
 
@@ -403,8 +489,13 @@ int main(int argc, char** argv) {
 
   std::cout << "Constructing Gibbs Sampler: " << std::endl;
   collapsed_gibbs gibbs(corpus, ntopics, alpha, beta);
+<<<<<<< HEAD
 
 
+=======
+  
+  
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
   std::ofstream llik_fout(llik_fname.c_str());
   llik_fout.precision(16);
 
@@ -415,7 +506,11 @@ int main(int argc, char** argv) {
     std::cout << "Computing top " << topk << " of each topic" << std::endl;
     display_top(corpus, gibbs.n_wt, topk);
     std::cout << "Number of changes: " << gibbs.nchanges << std::endl
+<<<<<<< HEAD
               << "Prop. Changes:     "
+=======
+              << "Prop. Changes:     " 
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
               << double(gibbs.nchanges)/ corpus.ntokens << std::endl;
     double llik = log_likelihood(gibbs.alpha, gibbs.beta, gibbs.n_td, gibbs.n_wt);
     std::cout << "Log-likelihood:    " // std::setprecision(8) <<
@@ -424,7 +519,11 @@ int main(int argc, char** argv) {
 
   }
   std::cout << "Finished burnin.  Preparing final sample set." << std::endl;
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
   mat_type n_td(ntopics, corpus.ndocs, 0);
   mat_type n_wt(corpus.nwords, ntopics, 0);
   mat_type n_t(ntopics, 1, 0);
@@ -433,7 +532,11 @@ int main(int argc, char** argv) {
     std::cout << "Sampling iteration: " << i << std::endl;
     gibbs.iterate();
     std::cout << "Number of changes: " << gibbs.nchanges << std::endl
+<<<<<<< HEAD
               << "Prop. Changes:     "
+=======
+              << "Prop. Changes:     " 
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
               << double(gibbs.nchanges)/ corpus.ntokens << std::endl;
     std::cout << "Accumulating sample" << std::endl;
     n_td += gibbs.n_td;
@@ -441,9 +544,15 @@ int main(int argc, char** argv) {
     n_t  += gibbs.n_t;
 
     std::cout << "Computing top " << topk << " of each topic" << std::endl;
+<<<<<<< HEAD
     display_top(corpus, n_wt, topk);
     std::cout << "Number of changes: " << gibbs.nchanges << std::endl
               << "Prop. Changes:     "
+=======
+    display_top(corpus, n_wt, topk);    
+    std::cout << "Number of changes: " << gibbs.nchanges << std::endl
+              << "Prop. Changes:     " 
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
               << double(gibbs.nchanges)/ corpus.ntokens << std::endl;
     double llik = log_likelihood(gibbs.alpha, gibbs.beta, gibbs.n_td, gibbs.n_wt);
     std::cout << "Log-likelihood:    " // std::setprecision(8) <<
@@ -456,17 +565,29 @@ int main(int argc, char** argv) {
   std::cout << "Saving doctop: " << doctop_fname << std::endl;
   std::ofstream doctop_fout(doctop_fname.c_str());
   for(size_t d = 0; d < corpus.ndocs; ++d) {
+<<<<<<< HEAD
     double normalizer = ntopics * alpha;
     for(size_t t = 0; t < ntopics; ++t)
       normalizer += double(n_td(t,d)) / double(nsamples);
     for(size_t t = 0; t < ntopics; ++t) {
       const double value =
+=======
+    double normalizer = ntopics * alpha; 
+    for(size_t t = 0; t < ntopics; ++t) 
+      normalizer += double(n_td(t,d)) / double(nsamples);
+    for(size_t t = 0; t < ntopics; ++t) {
+      const double value = 
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
         (double(n_td(t,d))/double(nsamples) + alpha) / normalizer;
       doctop_fout << value << ((t+1 < ntopics)? '\t' : '\n');
     }
   }
   doctop_fout.close();
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> eaff9bf285066d29747ff82bbc7ac2e59e4f00f6
   std::cout << "Saving wordtop: " << wordtop_fname << std::endl;
 
 
